@@ -1,10 +1,11 @@
-import app from './app';
-import { APP_PORT } from "./utilities/secrets";
-import logger from "./utilities/logger";
+import express from 'express';
+import app from './app';  // Explicit .js extension
 
-app
-  .listen(APP_PORT, () => {
-    logger.info(`server running on port : ${APP_PORT}`);
-    console.log(`server running on port : ${APP_PORT}`);
-  })
-  .on('error', (e) => logger.error(e));
+const server = express();
+const port = 3000;
+
+server.use(app);
+
+server.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

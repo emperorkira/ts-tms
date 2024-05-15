@@ -1,7 +1,7 @@
 {
-  "name": "typescript-node-express-realworld-example-app",
+  "name": "innsoft_tms",
   "version": "0.0.0",
-  "description": "> ### [YOUR_FRAMEWORK] codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.",
+  "description": "Ticketing Management System",
   "main": "app.js",
   "scripts": {
     "start": "npm run build && npm run watch && npm run serve",
@@ -15,9 +15,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skopekreep/typescript-node-express-realworld-example-app"
+    "url": ""
   },
-  "author": "Josh Black",
+  "author": "Mark Dinglasa",
   "license": "ISC",
   "bugs": {
     "url": "https://"
@@ -33,15 +33,11 @@
     "@types/express-session": "^1.17.0",
     "@types/helmet": "0.0.47",
     "@types/jsonwebtoken": "^8.5.0",
-    "@types/lodash": "^4.14.157",
-    "@types/mongodb": "^3.5.25",
-    "@types/mongoose": "^5.7.31",
-    "@types/mongoose-unique-validator": "1.0.4",
     "@types/node": "14.0.22",
     "@types/passport": "^1.0.4",
     "@types/passport-local": "^1.0.33",
-    "newman": "^3.8.2",
-    "nodemon": "2.0.4",
+    "newman": "^6.1.2",
+    "nodemon": "^2.0.22",
     "ts-node": "8.10.2",
     "tslint": "6.1.2",
     "typescript": "^3.9.6"
@@ -49,20 +45,11 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "compression": "1.7.4",
+    "concurrently": "^8.2.2",
     "cors": "2.8.5",
     "dotenv": "8.2.0",
     "express": "^4.17.1",
-    "express-jwt": "^6.0.0",
-    "express-session": "^1.17.1",
-    "helmet": "^3.23.3",
-    "jsonwebtoken": "^8.5.1",
-    "lodash": "^4.17.19",
-    "mongoose": "^5.9.23",
-    "mongoose-unique-validator": "2.0.3",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "slugify": "^1.4.4",
-    "winston": "^3.3.3",
-    "winston-daily-rotate-file": "^4.5.0"
+    "express-jwt": "^8.4.1",
+    "express-session": "^1.17.1"
   }
 }
