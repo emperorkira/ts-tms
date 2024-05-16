@@ -1,11 +1,13 @@
-import express from 'express';
-import app from './app';  // Explicit .js extension
 
-const server = express();
-const port = 3000;
+import app from './appExpress';
+import { connectToDB } from './app';
 
-server.use(app);
+const PORT = process.env.PORT || 3000;
 
-server.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+// Connect to the database
+connectToDB();
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });

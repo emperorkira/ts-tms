@@ -1,20 +1,23 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "esModuleInterop": true,
     "target": "es2017",
-    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "lib": ["es6", "dom"],
+    "esModuleInterop": true,
     "moduleResolution": "node",
+    "noImplicitAny": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "sourceMap": true,
     "outDir": "build",
     "baseUrl": ".",
     "paths": {
-      "*": [
-        "node_modules/*",
-      ]
-    }
+      "*": ["node_modules/*"]
+    },
+    "resolveJsonModule": true,
+    
+    "typeRoots": ["./types", "./node_modules/@types"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "types/**/*"]
 }
